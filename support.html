@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPath Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: -webkit-linear-gradient(45deg, #4F46E5, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg border-b border-gray-200 sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="./index.html" class="flex items-center space-x-3">
+                <img src="https://storage.googleapis.com/gemini-prod-us-west1-4335/e4/1d/Icon_1723504060010.png" alt="MarketPath App Icon" class="w-8 h-8 rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/32x32/E0E7FF/4F46E5?text=MP';">
+                <span class="text-xl font-bold text-gray-900">MarketPath</span>
+            </a>
+            <a href="./index.html" class="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors">Home</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+        <div class="max-w-4xl mx-auto">
+
+            <!-- Page Header -->
+            <div class="text-center mb-12 md:mb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight gradient-text">Support & FAQ</h1>
+                <p class="mt-4 text-lg text-gray-600">Your guide to mastering the MarketPath investment learning app.</p>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-200">
+                <h2 class="text-2xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
+                
+                <div class="space-y-6" id="faq-accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="border-b border-gray-200 pb-4">
+                        <button class="w-full flex justify-between items-center text-left focus:outline-none accordion-toggle">
+                            <span class="text-lg font-semibold text-gray-800">Is MarketPath a real trading platform?</span>
+                            <svg class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600 leading-relaxed">
+                                No, MarketPath is a simulation app designed for **educational purposes only**. It uses real market concepts but does not involve real money or actual trading on live stock exchanges. It's a risk-free environment for you to learn and practice investment strategies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="border-b border-gray-200 pb-4">
+                        <button class="w-full flex justify-between items-center text-left focus:outline-none accordion-toggle">
+                            <span class="text-lg font-semibold text-gray-800">How is my portfolio value calculated?</span>
+                            <svg class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600 leading-relaxed">
+                                Your portfolio value is the sum of your available cash and the current market value of all the stocks you hold. The market data in the app is simulated but designed to reflect realistic market movements, so your portfolio value will fluctuate as stock prices change.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="border-b border-gray-200 pb-4">
+                        <button class="w-full flex justify-between items-center text-left focus:outline-none accordion-toggle">
+                            <span class="text-lg font-semibold text-gray-800">Does the app provide financial advice?</span>
+                            <svg class="w-6 h-6 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600 leading-relaxed">
+                                **Absolutely not.** MarketPath is strictly for educational and informational purposes. All content, including learning modules and simulated trades, should not be considered financial advice. Always consult with a qualified financial professional before making any real-world investment decisions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="mt-12 text-center bg-white p-8 rounded-2xl shadow-md border border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-900">Still Have Questions?</h2>
+                <p class="mt-3 text-lg text-gray-600">Our support team is here to help you on your learning journey.</p>
+                <a href="mailto:bendoryair@gmail.com?subject=MarketPath%20App%20Support" class="mt-6 inline-block bg-indigo-600 text-white font-bold text-lg py-3 px-8 rounded-full hover:bg-indigo-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Contact Support
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 Yair Ben-Dor. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for accordion functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionToggles = document.querySelectorAll('.accordion-toggle');
+
+            accordionToggles.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('svg');
+
+                    document.querySelectorAll('.accordion-content').forEach(item => {
+                        if (item !== content && item.style.maxHeight) {
+                            item.style.maxHeight = null;
+                            item.previousElementSibling.querySelector('svg').classList.remove('rotate-180');
+                        }
+                    });
+
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.classList.remove('rotate-180');
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
